@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <div class="question-count">
+        <span class="main">Question <span id="current-question">1</span>/<span id="total-questions">1</span></span>
+      </div>
+      <hr>
+      <div class="question-text" id="question-text">
+        What does HTML stand for?
+      </div>
+    </div>
+    <div class="timer-circle">
+      <svg height="70" width="70">
+        <circle cx="35" cy="35" r="28" stroke="#7f3ce8" stroke-width="5" fill="none"/>
+        <circle id="timer-progress" cx="35" cy="35" r="28" stroke="#e84ec1" stroke-width="5" fill="none" 
+                stroke-dasharray="176" stroke-dashoffset="0" style="transition: stroke-dashoffset 1s linear;"/>
+      </svg>
+      <span id="timer">30</span>
+    </div>
+    <form id="quiz-form">
+      <div class="options-grid" id="options-container">
+        <!-- Options go here -->
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
